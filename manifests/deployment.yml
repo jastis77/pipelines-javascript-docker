@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: jastispipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: jastispipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: jastispipelinesjavascriptdocker 
+          image: sriniacr.azurecr.io/jastispipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
