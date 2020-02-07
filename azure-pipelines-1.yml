@@ -56,7 +56,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'jastis77pipelinesjavascriptdocker-5056.default'
+    environment: 'jastis77pipelinesjavascriptdocker.default'
     strategy:
       runOnce:
         deploy:
@@ -86,7 +86,7 @@ stages:
     pool:
       vmImage: $(vmImageName)
       
-    environment: 'jastis77pipelinesjavascriptdocker-5056.$(k8sNamespaceForPR)'
+    environment: 'jastis77pipelinesjavascriptdocker.$(k8sNamespaceForPR)'
     strategy:
       runOnce:
         deploy:
